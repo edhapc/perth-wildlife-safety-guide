@@ -45,7 +45,7 @@ const speciesData: Species[] = [
     dangerLevel: 'dangerous',
     description: 'A small black spider with a distinctive red stripe on its back. Females are larger and more venomous than males.',
     habitat: 'Often found in dry, sheltered areas like garden sheds, mailboxes, and under outdoor furniture around Perth suburbs.',
-    imageUrl: 'https://www.perthnow.com.au/news/offbeat/redback-spider-in-toilet-at-perth-home-c-6645681',
+    imageUrl: 'https://www.australiangeographic.com.au/wp-content/uploads/2018/06/redback-spider.jpg',
     safetyTips: [
       'Check shoes and gloves before putting them on',
       'Wear gloves when gardening or cleaning outdoor areas',
