@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,30 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				danger: {
+					50: '#fff5f5',
+					100: '#fed7d7',
+					500: '#e53e3e',
+					600: '#c53030'
+				},
+				nature: {
+					50: '#f0f9f0',
+					100: '#dcf0dc',
+					500: '#38a169',
+					600: '#2f855a'
+				},
+				neutral: {
+					50: '#f7fafc',
+					100: '#edf2f7',
+					200: '#e2e8f0',
+					300: '#cbd5e0',
+					400: '#a0aec0',
+					500: '#718096',
+					600: '#4a5568',
+					700: '#2d3748',
+					800: '#1a202c',
+					900: '#171923'
 				}
 			},
 			borderRadius: {
@@ -84,11 +109,54 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					from: {
+						opacity: '0'
+					},
+					to: {
+						opacity: '1'
+					}
+				},
+				'fade-up': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'pulse-soft': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.8'
+					}
+				},
+				'scale-in': {
+					from: {
+						opacity: '0',
+						transform: 'scale(0.95)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'scale(1)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'fade-up': 'fade-up 0.5s ease-out',
+				'pulse-soft': 'pulse-soft 2s infinite ease-in-out',
+				'scale-in': 'scale-in 0.3s ease-out'
+			},
+			backdropBlur: {
+				xs: '2px',
 			}
 		}
 	},
